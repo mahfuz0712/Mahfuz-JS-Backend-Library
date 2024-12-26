@@ -1,6 +1,6 @@
 {
   "name": "mahfuz-js",
-  "version": "1.3.5",
+  "version": "1.3.6",
   "description": "mern stack development tool",
   "main": "./dist/mahfuz-js.js",
   "type": "module",
