@@ -1,22 +1,25 @@
-# Mahfuz JS MERN Stack Library
+# Mahfuz JS MERN Stack Library - For Backend Development
 
 ## Overview
-Mahfuz JS is a Node.js MERN Stack library that provides various utilities including server setup, database connection, encryption, email sending, and GitHub release checking.
+Mahfuz JS is a Node.js MERN Stack library that provides various utilities including server setup, database connection, encryption, email sending, and GitHub release checking for backend development.
 
 ## Installation
 To install the module, use npm:
+
 ```sh
 npm install mahfuz-js
 ```
 ## Usage
 ### Importing the Module
 First, import the required classes from the module:
+
 ```javascript
 import { Backend, DatabaseConnector, Utils, ApiResponse, ApiError, MahfuzMailer, UpdateChecker } from 'mahfuz-js';
 ```
 
 ## Backend Class
 ### The Backend class sets up an Express server with necessary middleware.
+
 ```javascript
 const backend = new Backend();
 backend.startServer();
@@ -39,6 +42,7 @@ const dbConnector = new DatabaseConnector(dbConfig);
 dbConnector.ConnectToMongoDB();
 ```
 #### MongoDB Atlas
+
 ```javascript
 const dbConfig = {
     SubDomain: 'your-subdomain',
@@ -48,13 +52,12 @@ const dbConfig = {
 };
 const dbConnector = new DatabaseConnector(dbConfig);
 dbConnector.ConnectToMongoDBAtlas();
-
-
 ```
 
 
 ### Utils Class
 The `Utils` class provides utility functions for generating random numbers, handling async requests, and encrypting data.
+
 ```javascript
 const utils = new Utils();
 const randomNumber = utils.GenerateRandomNumber(10);
@@ -64,18 +67,21 @@ const isMatch = utils.Compare('your-string', encryptedString);
 
 ### ApiResponse Class
 The `ApiResponse` class is used to standardize API responses.
+
 ```javascript
 const response = new ApiResponse(200, { key: 'value' }, 'Success message');
 ```
 
 ### ApiError Class
 The `ApiError` class is used to standardize API error responses.
+
 ```javascript
 const error = new ApiError(400, 'Error message', ['error1', 'error2']);
 ```
 
 ### MahfuzMailer Class
 The `MahfuzMailer` class is used to send emails using nodemailer.
+
 ```javascript
 const mailConfig = {
   Name: 'Your Name', \\ Your name or company name
@@ -91,7 +97,9 @@ mailer.SendMail('recipient@example.com', 'Subject', '<h1>Email Body</h1>');
 ```
 
 ### UpdateChecker Class
+
 The `UpdateChecker` class is used to check for the latest release of a GitHub repository and retrieve the download URL for a specific operating system.
+
 ```javascript
 const updateConfig = {
   GithubUsername: 'your-github-username',
