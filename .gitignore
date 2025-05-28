@@ -5,4 +5,4 @@ src/
 .npmignore
 package-lock.json
 package.json
-update.json
+update.js
