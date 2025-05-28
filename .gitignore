@@ -1,2 +1,8 @@
+dist/
 node_modules/
 src/
+.env
+.npmignore
+package-lock.json
+package.json
+update.json
