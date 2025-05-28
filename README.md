@@ -1,7 +1,7 @@
-# Mahfuz JS MERN Stack Library - For Backend Development
+# Mahfuz JS Backend Library 
 
 ## Overview
-Mahfuz JS is a Node.js MERN Stack library that provides various utilities including server setup, database connection, encryption, email sending, and GitHub release checking for backend development.
+Mahfuz JS is a Backend library that provides various utilities including server setup, database connection, encryption, email sending, and GitHub release checking for backend development.
 
 ## Installation
 To install the module, use npm:
